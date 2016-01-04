@@ -1,0 +1,5 @@
+c:\users\dhartnett\documents\visual studio 2013\Projects\GCMessaging\GCMessaging\bin\Debug\GCMessaging.dll
+c:\users\dhartnett\documents\visual studio 2013\Projects\GCMessaging\GCMessaging\bin\Debug\GCMessaging.pdb
+c:\users\dhartnett\documents\visual studio 2013\Projects\GCMessaging\GCMessaging\obj\Debug\GCMessaging.csprojResolveAssemblyReference.cache
+c:\users\dhartnett\documents\visual studio 2013\Projects\GCMessaging\GCMessaging\obj\Debug\GCMessaging.dll
+c:\users\dhartnett\documents\visual studio 2013\Projects\GCMessaging\GCMessaging\obj\Debug\GCMessaging.pdb

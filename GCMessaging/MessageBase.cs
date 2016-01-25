@@ -13,6 +13,7 @@ namespace GCMessaging
         HEARTBEAT = 0,
         LOGIN = 1,
         CREATEUSER = 2,
+        CHAT = 3,
     }
 
     [Serializable]

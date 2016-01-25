@@ -8,3 +8,8 @@ C:\Users\bwt\Desktop\GCMessaging\GCMessaging\bin\Release\GCMessaging.pdb
 C:\Users\bwt\Desktop\GCMessaging\GCMessaging\obj\Release\GCMessaging.csprojResolveAssemblyReference.cache
 C:\Users\bwt\Desktop\GCMessaging\GCMessaging\obj\Release\GCMessaging.dll
 C:\Users\bwt\Desktop\GCMessaging\GCMessaging\obj\Release\GCMessaging.pdb
+C:\Users\dhartnett\Source\Repos\GCMessaging\GCMessaging\bin\Release\GCMessaging.dll
+C:\Users\dhartnett\Source\Repos\GCMessaging\GCMessaging\bin\Release\GCMessaging.pdb
+C:\Users\dhartnett\Source\Repos\GCMessaging\GCMessaging\obj\Release\GCMessaging.csprojResolveAssemblyReference.cache
+C:\Users\dhartnett\Source\Repos\GCMessaging\GCMessaging\obj\Release\GCMessaging.dll
+C:\Users\dhartnett\Source\Repos\GCMessaging\GCMessaging\obj\Release\GCMessaging.pdb

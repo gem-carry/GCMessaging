@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatMessage.cs" />
     <Compile Include="CreateUserMessage.cs" />
     <Compile Include="MessageBase.cs" />
     <Compile Include="LoginMessage.cs" />

@@ -22,7 +22,7 @@ namespace GCMessaging
                     (data[i-1] == EOM[2]) &&
                     (data[i]   == EOM[3]) )
                 {
-                    found = i - 3;
+                    found = i;
                     break;
                 }
             }
@@ -44,6 +44,22 @@ namespace GCMessaging
             int newLength = inData.Length - EOM.Length;
             outData = new byte[newLength];
             Array.Copy(inData, 0, outData, 0, newLength);
+        }
+
+        public static void ClearMessageFromStream(int eomEndIdx, byte[] inData, out byte[] message, out byte[] outData, out int newLength)
+        {
+            int msgLength = eomEndIdx + 1 - EOM.Length;
+            newLength = inData.Length - 1 - eomEndIdx;
+
+            message = new byte[msgLength];
+            outData = new byte[newLength];
+
+            Array.Copy(inData, 0, message, 0, msgLength);
+
+            if (newLength > 0)
+            {
+                Array.Copy(inData, eomEndIdx + 1, outData, 0, newLength);
+            }
         }
     }
 }

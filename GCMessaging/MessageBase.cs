@@ -21,7 +21,7 @@ namespace GCMessaging
     {
         public MessageType mType;
 
-        public MessageBase() { }
+        public MessageBase() { this.mType = MessageType.HEARTBEAT; }
 
         // The special constructor is used to deserialize values.
         public MessageBase(SerializationInfo info, StreamingContext context)

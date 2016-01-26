@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Serialization;
-using System.IO;
+
 
 namespace GCMessaging
 {
@@ -14,6 +10,7 @@ namespace GCMessaging
         LOGIN = 1,
         CREATEUSER = 2,
         CHAT = 3,
+        JOINSESSION = 4,
     }
 
     [Serializable]

@@ -11,6 +11,7 @@ namespace GCMessaging
         CREATEUSER = 2,
         CHAT = 3,
         JOINSESSION = 4,
+        SERVERRESPONSECODE = 5,
     }
 
     [Serializable]

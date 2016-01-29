@@ -42,10 +42,10 @@ namespace GCMessaging
             Array.Copy(inData, 0, outData, 0, newLength);
         }
 
-        public static void ClearMessageFromStream(int eomEndIdx, byte[] inData, out byte[] message, out byte[] outData, out int newLength)
+        public static void ClearMessageFromStream(int eomEndIdx, byte[] inData, out byte[] message, out byte[] outData)
         {
             int msgLength = eomEndIdx + 1 - EOM.Length;
-            newLength = inData.Length - 1 - eomEndIdx;
+            int newLength = inData.Length - 1 - eomEndIdx;
 
             message = new byte[msgLength];
             outData = null;

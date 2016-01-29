@@ -48,12 +48,13 @@ namespace GCMessaging
             newLength = inData.Length - 1 - eomEndIdx;
 
             message = new byte[msgLength];
-            outData = new byte[newLength];
+            outData = null;
 
             Array.Copy(inData, 0, message, 0, msgLength);
 
             if (newLength > 0)
             {
+                outData = new byte[newLength];
                 Array.Copy(inData, eomEndIdx + 1, outData, 0, newLength);
             }
         }

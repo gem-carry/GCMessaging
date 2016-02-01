@@ -58,5 +58,31 @@ namespace GCMessaging
                 Array.Copy(inData, eomEndIdx + 1, outData, 0, newLength);
             }
         }
+
+        /// <summary>
+        /// Pass in an ending index of a message and the buffer it is from,
+        /// this function will remove that message from the buffer and serve it out
+        /// as well as return the new size of any unread bytes in buffer
+        /// </summary>
+        /// <param name="eomEndIdx">The index of the end of the message found</param>
+        /// <param name="buffer">The buffer the message is in</param>
+        /// <param name="bufferSize">The current buffer size</param>
+        /// <param name="message">The message bytes</param>
+        /// <returns>int - The NEW buffer size after removing message</returns>
+        public static int PullMessageFromBuffer(int eomEndIdx, byte[] buffer, int bufferSize, out byte[] message)
+        {
+            int msgLength = (eomEndIdx + 1) - EOM.Length;
+            int newBufferSize = bufferSize - (eomEndIdx + 1);
+
+            message = new byte[msgLength];
+
+            Array.Copy(buffer, 0, message, 0, msgLength);
+
+            if (newBufferSize > 0)
+            {
+                Array.Copy(buffer, bufferSize, buffer, 0, newBufferSize);
+            }
+            return newBufferSize;
+        }
     }
 }
